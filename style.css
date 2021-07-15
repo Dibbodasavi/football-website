@@ -33,6 +33,7 @@ img {
 }
 
 
+
 /*------------------------------------------- Header ---------------------------------------------------------*/
 
 #header {
@@ -74,7 +75,7 @@ a.header-button {
 }
 
 .header-img:hover {
-    animation: motion 3s infinite linear;
+    animation: motion 2s infinite linear;
 }
 
 @keyframes motion {
@@ -112,7 +113,7 @@ a.header-button {
 }
 /* -------------------------------------Football Quote-------------------------------------------------------------  */
 
-#football-quote{
+#Gif-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -125,7 +126,7 @@ a.header-button {
     margin-top: 5%;
 }
 
-#football-quote p{
+#Gif-container p{
     padding: 5%;
 }
 /* ----------------------------------------------------------Foooter-------------------------------------------------------------- */
@@ -179,26 +180,8 @@ footer.footer {
         height: 16.198rem;
         margin: 1rem 1rem 3.866rem 1rem;
     }
-    .player {
+    .player{
         grid-template-columns: repeat(1, 1fr);
-    }
-    .shop {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    h3.shop-title {
-        margin-right: 0px;
-        font-size: 25px;
-    }
-    .travel-item {
-        margin-left: 0rem;
-        padding: 5px;
-    }
-    h4.travel-red {
-        font-size: 30px;
-    }
-    h4.travel-text {
-        font-size: 29px;
-        width: 298px;
     }
 }
 
@@ -219,12 +202,6 @@ footer.footer {
     .player {
         grid-template-columns: repeat(2, 1fr);
     }
-    .shop {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .travel-item {
-        margin-left: 2rem;
-    }
 }
 
 
@@ -244,11 +221,5 @@ footer.footer {
     }
     .player {
         grid-template-columns: repeat(3, 1fr);
-    }
-    .shop {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .travel-item {
-        margin-left: 2rem;
     }
 }
