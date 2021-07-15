@@ -1,0 +1,250 @@
+/* -----------------------------------------------------Main Body  -----------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #6C6C6C;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: rgb(205, 255, 227);
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+
+h2 {
+    color: #18191F;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*------------------------------------------- Header ---------------------------------------------------------*/
+
+#header {
+    width: 100%;
+    height: 109vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: #2D25A0;
+}
+
+.header-contact {
+    margin: 12.938rem 0 7.62rem 9rem;
+}
+
+.header-contact h1 {
+    margin-bottom: 2.31rem;
+}
+
+a.header-button {
+    width: 168px;
+    height: 44px;
+    background: #E02C6D;
+    padding: 14px 17px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.header-img {
+    width: 57.75rem;
+    height: 48.375rem;
+    margin: 153px 140px 86px 0;
+}
+
+.header-img:hover {
+    animation: motion 3s infinite linear;
+}
+
+@keyframes motion {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* --------------------------------------------Players info section ---------------------------------------------- */
+
+#players {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.player {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.players-item {
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+}
+/* -------------------------------------Football Quote-------------------------------------------------------------  */
+
+#football-quote{
+    display: flex;
+    align-items: center;
+    font-family: cursive;
+    margin-top: 5%;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(12, 0, 0, 0.15);
+    padding: 1rem;
+}
+
+
+/* ----------------------------------------------------------Foooter-------------------------------------------------------------- */
+
+footer.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.footer-contact img {
+    width: 14.239rem;
+    height: 4.214rem;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.social-icon i {
+    font-size: 2rem;
+    padding: 1rem;
+    color: #969BAB;
+    transition: 2s;
+}
+
+.social-icon i:hover {
+    color: #2d25a0;
+    transition: 2s;
+}
+
+
+/* ---------------------------------Media Query section -------------------------------- */
+
+
+/* MOBILE */
+
+@media only screen and (max-width:688px) {
+    #header {
+        justify-content: center;
+    }
+    .header-contact {
+        margin: 7rem 4.125rem 0 1rem;
+    }
+    .header-contact h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .header-img {
+        width: 20.563rem;
+        height: 16.198rem;
+        margin: 1rem 1rem 3.866rem 1rem;
+    }
+    .player {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .shop {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    h3.shop-title {
+        margin-right: 0px;
+        font-size: 25px;
+    }
+    .travel-item {
+        margin-left: 0rem;
+        padding: 5px;
+    }
+    h4.travel-red {
+        font-size: 30px;
+    }
+    h4.travel-text {
+        font-size: 29px;
+        width: 298px;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    #header {
+        justify-content: center;
+    }
+    .header-contact {
+        margin: 5.938rem 0 -4.38rem 4rem;
+    }
+    .header-img {
+        width: 35.75rem;
+        height: 25.375rem;
+        margin: 110px 0px 86px 0;
+    }
+    .player {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .travel-item {
+        margin-left: 2rem;
+    }
+}
+
+
+/* laptop  */
+
+@media only screen and (min-width:992px) and (max-width:1697px) {
+    #header {
+        justify-content: center;
+    }
+    .header-contact {
+        margin: -7.062rem 0 -4.38rem 4rem;
+    }
+    .header-img {
+        width: 35.75rem;
+        height: 25.375rem;
+        margin: 72px 46px 86px 0;
+    }
+    .player {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .travel-item {
+        margin-left: 2rem;
+    }
+}
